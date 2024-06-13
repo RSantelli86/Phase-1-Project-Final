@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('input', filterCharacters);
 });
-
+//notes...
 let characters = [];
 
 function fetchCharacters() {

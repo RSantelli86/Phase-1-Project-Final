@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The <title> tag sets the title of the webpage as "Rick and Morty Character Viewer," which appears on the browser tab.-->
     <title>Rick and Morty Character Viewer</title>
+    <!--Within the <style> tags, some CSS (Cascading Style Sheets) is included to style the elements on the page. 
+    For example, the body is styled to use the Arial font, and the #character-list is set to display its child elements 
+    in a flexible layout that wraps onto the next line if there isn't enough space.-->
+    <!--The .character class adds a border, margin, padding, and width to each character's container, and ensures that 
+    images inside these containers do not exceed their width.-->
+    <!--The #character-details is given a top margin to space it from the content above.-->
     <style>
         body { font-family: Arial, sans-serif; }
         #character-list { display: flex; flex-wrap: wrap; }
@@ -13,10 +20,16 @@
     </style>
 </head>
 <body>
+    <!--The <h1> tag displays a heading with the text "Rick and Morty Character Viewer".-->
     <h1>Rick and Morty Character Viewer</h1>
+    <!--An input field of type text with the id search-input is provided, allowing users to filter characters by their status.-->
     <input type="text" id="search-input" placeholder="Filter by status (alive, dead, unknown)" />
+    <!--Two <div> elements, #character-list and #character-details, are placeholders where JavaScript will dynamically 
+    insert content: the list of characters and the details of a selected character.-->
     <div id="character-list"></div>
     <div id="character-details"></div>
+    <!--The <script> tag at the bottom of the body links to an external JavaScript file (index.js) that will add functionality 
+    to the page, such as fetching data from an API and handling user interactions.-->
     <script src="index.js"></script>
 </body>
 </html>
